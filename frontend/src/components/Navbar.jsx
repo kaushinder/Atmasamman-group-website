@@ -76,6 +76,7 @@ function Navbar() {
                     <a
                       href="https://ats-tech-services.vercel.app/"
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="ats-link"
                        style={{ textDecoration: "underline", color: "black" }}
                     >
@@ -122,6 +123,7 @@ function Navbar() {
                     <a
                       href="https://ats-tech-services.vercel.app/"
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="ats-link"
                     >
                       Visit Website ↗
@@ -169,6 +171,7 @@ function Navbar() {
                     <a
                       href="https://ats-tech-services.vercel.app/"
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="ats-link"
                     >
                       Visit Website ↗
@@ -216,6 +219,7 @@ function Navbar() {
                     <a
                       href="https://ats-tech-services.vercel.app/"
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="ats-link"
                     >
                       Visit Website ↗
