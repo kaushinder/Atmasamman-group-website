@@ -213,14 +213,15 @@ function Navbar() {
                       <li>✔ Social Welfare Programs</li>
                     </ul>
 
-                    <Link to="/foundation" className="ats-link">
+                    <Link to="/foundation" className="ats-link" style={{ textDecoration: "underline", color: "black" }}>
                       Explore →
                     </Link>
                     <a
-                      href="https://ats-tech-services.vercel.app/"
+                      href="https://atmasamman-foundation.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="ats-link"
+                      style={{ textDecoration: "underline", color: "black" }}
                     >
                       Visit Website ↗
                     </a>
