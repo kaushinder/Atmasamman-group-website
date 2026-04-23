@@ -77,6 +77,7 @@ function Navbar() {
                       href="https://ats-tech-services.vercel.app/"
                       target="_blank"
                       className="ats-link"
+                       style={{ textDecoration: "underline", color: "black" }}
                     >
                       Visit Website ↗
                     </a>
