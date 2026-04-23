@@ -1,0 +1,252 @@
+/* ================= NAVBAR ================= */
+.nav-wrapper {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  padding: 20px 15px;
+  border-radius: 20px;
+  margin: 10px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* ================= LOGO ================= */
+.logo-link {
+  display: inline-block;
+  padding: 12px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.logo-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 80%;
+  transition: 0.4s;
+  
+}
+
+.logo-text {
+  color: white;
+  font-weight: 600;
+  margin-top: 8px;
+  letter-spacing: 1px;
+}
+
+/* Hover */
+.logo-link:hover {
+  background: rgba(37, 99, 235, 0.15);
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.5);
+}
+
+.logo-link:hover .logo-img {
+  transform: scale(1.1);
+}
+
+.logo-link:hover .logo-text {
+  color: #60a5fa;
+}
+
+/* ================= CARDS ================= */
+.nav-card {
+  display: block;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 16px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Hover */
+.nav-card:hover {
+  transform: translateY(-6px) scale(1.04);
+  background: rgba(37, 99, 235, 0.3);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+}
+
+/* Icon */
+.icon {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #60a5fa;
+}
+
+/* Text */
+.nav-card h6 {
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav-card p {
+  font-size: 12px;
+  color: #cbd5f5;
+  margin: 0;
+}
+
+/* ================= BUTTONS ================= */
+.custom-btn {
+  border: 1px solid rgba(255,255,255,0.4);
+  padding: 8px 18px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.custom-btn:hover {
+  background: linear-gradient(135deg, #2563eb, #60a5fa);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.4);
+}
+
+/* ================= WHY CARD ================= */
+.why-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px 18px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.why-card:hover {
+  transform: translateY(-8px);
+  border: 1px solid #2563eb;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+}
+
+/* Icon Circle */
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #60a5fa);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+/* ================= FOOTER ================= */
+.footer-top-line {
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(to right, #2563eb, #60a5fa);
+  margin-bottom: 20px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: #2563eb;
+  padding-left: 5px;
+}
+
+/* ================= FORM ================= */
+.form-control {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #2563eb;
+}
+
+button {
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+/* ================= CONTACT CARD ================= */
+.contact-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.custom-input {
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.custom-input:focus {
+  border-color: #2563eb;
+  box-shadow: none;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .logo-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .nav-card {
+    padding: 12px;
+  }
+}
+.ats-wrapper {
+  position: relative;
+}
+
+.ats-mega {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+
+  display: flex;
+  align-items: center;
+
+  background: #0d6efd;
+  color: white;
+
+  padding: 20px;
+  border-radius: 14px;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+
+  box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+  z-index: 999;
+}
+
+.ats-wrapper:hover .ats-mega {
+  opacity: 1;
+  visibility: visible;
+  top: 110%;
+}
+
+.ats-mega-image img {
+  width: 220px;
+  border-radius: 10px;
+}
+
+.ats-features {
+  margin: 10px 0;
+  padding-left: 10px;
+  font-size: 0.85rem;
+}
+
+.ats-features li {
+  list-style: none;
+  margin-bottom: 5px;
+}
